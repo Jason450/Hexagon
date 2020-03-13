@@ -12,6 +12,7 @@ public class Hexagon : MonoBehaviour
     void Start()
     {
         trans = GetComponent<Transform>();
+        trans.localEulerAngles = new Vector3(0, 0, Random.Range(0, 360));
     }
 
     // Update is called once per frame
@@ -22,6 +23,7 @@ public class Hexagon : MonoBehaviour
         if (trans.localScale.x <= 0.05)
         {
             trans.localScale = Vector3.one * startScale;
+            trans.localEulerAngles = new Vector3(0, 0, Random.Range(0, 360));
         }
     }
 }

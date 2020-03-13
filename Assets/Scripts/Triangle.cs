@@ -23,12 +23,10 @@ public class Triangle : MonoBehaviour
 
     public void RotateRight()
     {
-        Debug.Log("to right");
         rotation.z += Input.GetAxis("Mouse X") * speed;
     }
     public void RotateLeft()
     {
-        Debug.Log("to left");
         rotation.z -= Input.GetAxis("Mouse X") * -speed;
     }
 
